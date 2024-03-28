@@ -1,0 +1,11 @@
+[package]
+name = "qsim"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+color-eyre = "0.6.3"
+lazy_static = "1.4.0"
+nalgebra = "0.32.4"
+num = "0.4.1"
+rand = "0.8.5"

@@ -30,7 +30,7 @@ impl Qbit {
             let y_squared = self.state.y.re().powi(2);
 
             let weights = [x_squared, y_squared];
-            let weighted_index = WeightedIndex::new(&weights).unwrap();
+            let weighted_index = WeightedIndex::new(weights).unwrap();
             let mut rng = thread_rng();
 
             self.value = Some(weighted_index.sample(&mut rng) != 0);
